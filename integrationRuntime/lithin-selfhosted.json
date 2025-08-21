@@ -1,0 +1,6 @@
+{
+	"name": "lithin-selfhosted",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

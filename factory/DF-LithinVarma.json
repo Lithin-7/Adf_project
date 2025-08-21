@@ -1,0 +1,9 @@
+{
+	"name": "DF-LithinVarma",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b4fb3fe2-b3c1-4aeb-a631-ce029bec8b4e",
+		"tenantId": "0a57a693-babd-463c-89f5-e705f4f02afb"
+	}
+}
