@@ -75,8 +75,7 @@ Applies business rules such as ranking, filtering, grouping, and cost calculatio
 - ✅ Incremental loads with **watermarking**  
 - ✅ **Parameterized pipelines** for reusability  
 - ✅ Data transformations following **Bronze → Silver → Gold** model  
-- ✅ Central orchestration with **parent pipeline & alerts**  
-- ✅ Key Vault integration for secure credentials  
+- ✅ Central orchestration with **parent pipeline & alerts**   
 
 ---
 
