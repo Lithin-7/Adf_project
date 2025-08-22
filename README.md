@@ -68,14 +68,12 @@ Applies business rules such as ranking, filtering, grouping, and cost calculatio
 ---
 
 ## 📂 Repository Structure
-'''
 ├── pipelines/ # JSON pipeline definitions
 ├── dataflows/ # JSON dataflows
 ├── linkedServices/ # Linked services (with Key Vault reference)
 ├── datasets/ # Dataset definitions
 ├── images/ # Exported pipeline & dataflow diagrams
 └── README.md # Project documentation
-'''
 
 ## 📝 Notes
 - Secrets and connection strings are managed in **Azure Key Vault**, not exposed in this repo.  
