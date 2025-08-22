@@ -9,13 +9,26 @@ The architecture follows a **Bronze → Silver → Gold** data layering pattern,
 ---
 
 ## 🏗️ Architecture
-- **Data Sources**: REST APIs, On-Prem SQL, Azure SQL DB  
-- **Orchestration**: Azure Data Factory Pipelines  
-- **Transformations**: ADF Mapping Dataflows  
-- **Storage**: Azure Data Lake (Bronze/Silver/Gold layers)  
-- **Security**: Azure Key Vault for secret management  
 
----
+The project follows a **layered architecture (Bronze → Silver → Gold)** with Azure Data Factory orchestrating the entire ETL process.  
+
+![Architecture](images/architecture.png)  
+
+### 🔹 Flow:
+1. **Data Ingestion (Bronze Layer)**  
+   - REST APIs → Azure Data Lake (Bronze)  
+   - On-Prem SQL / Flat Files → Azure Data Lake (Bronze)  
+   - Azure SQL Database (Incremental Loads) → Azure Data Lake (Bronze)  
+
+2. **Data Transformation (Silver Layer)**  
+   - Cleansing, standardization, mapping, enrichment using **ADF Mapping Dataflows**  
+
+3. **Data Serving (Gold Layer)**  
+   - Curated, aggregated, and analytics-ready data for **reporting and dashboards**  
+
+4. **Orchestration**  
+   - **ADF Pipelines** manage ingestion and transformation workflows  
+
 
 ## 🔄 Pipelines
 
